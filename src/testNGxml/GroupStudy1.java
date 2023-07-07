@@ -1,0 +1,37 @@
+package testNGxml;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class GroupStudy1 {
+	@Test(groups = "sanity")
+	  public void myMethod1() 
+	  {
+		 Reporter.log("Method1 is running", true); 
+	  }
+	  @Test(groups = "Regression")
+	  public void myMethod2() 
+	  {
+		 Reporter.log("Method2 is running", true); 
+	  }
+	  @Test(groups = "sanity")
+	  public void myMethod3() 
+	  {
+		 Reporter.log("Method3 is running", true); 
+	  }
+	  @Test(groups = "Regression")
+	  public void myMethod4() 
+	  {
+		 Reporter.log("Method4 is running", true); 
+	  }
+	  @Test(groups = "sanity")
+	  public void myMethod5() 
+	  {
+		 Reporter.log("Method5 is running", true); 
+	  }
+	  @Test
+	  public void myMethod6() 
+	  {
+		 Reporter.log("Method6 is running", true); 
+	  }
+	}
